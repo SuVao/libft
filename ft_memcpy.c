@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/09 09:40:47 by marvin            #+#    #+#             */
-/*   Updated: 2024/04/09 09:40:47 by marvin           ###   ########.fr       */
+/*   Created: 2024/04/10 13:05:54 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/10 13:05:54 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>

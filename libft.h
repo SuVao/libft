@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/09 13:41:19 by marvin            #+#    #+#             */
-/*   Updated: 2024/04/09 13:41:19 by marvin           ###   ########.fr       */
+/*   Created: 2024/04/10 13:11:55 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/10 13:11:55 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #ifndef LIBFT_H
 # define LIBFT_H
 

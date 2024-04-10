@@ -3,26 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/09 09:40:11 by marvin            #+#    #+#             */
-/*   Updated: 2024/04/09 09:40:11 by marvin           ###   ########.fr       */
+/*   Created: 2024/04/10 13:05:17 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/10 13:05:17 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
-
-int	ft_strlen(const char *str)
-{
-	int		i;
-
-	i = 0;
-	while (*str)
-		i++;
-	return (i);
-}
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {

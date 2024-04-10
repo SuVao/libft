@@ -6,13 +6,12 @@
 /*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 11:55:04 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/10 12:41:09 by pesilva-         ###   ########.fr       */
+/*   Updated: 2024/04/10 13:11:21 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
-#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

@@ -3,28 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/09 09:42:23 by marvin            #+#    #+#             */
-/*   Updated: 2024/04/09 09:42:23 by marvin           ###   ########.fr       */
+/*   Created: 2024/04/10 13:07:24 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/10 13:07:24 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 
-char	*ft_strdup(const char *s, size_t n)
+char	*ft_strdup(const char *s)
 {
-	const char		*src;
-	char			*str_cpy;
-	size_t			i;
-	size_t			tam;
+	const char	*src;
+	size_t		i;
+	size_t		tam;
+	char		*str_cpy;
 
-	tam = n;
 	i = 0;
 	src = s;
+	tam = ft_strlen(s);
 	str_cpy = (char *)malloc(sizeof(char) * tam);
 	if (!str_cpy)
 		return (0);
@@ -36,7 +34,6 @@ char	*ft_strdup(const char *s, size_t n)
 	str_cpy[i] = '\0';
 	return (str_cpy);
 }
-
 /*int main()
 {
     char source[] = "GeeksForGeeks";
