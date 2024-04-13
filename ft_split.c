@@ -6,13 +6,14 @@
 /*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 16:03:35 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/10 17:23:52 by pesilva-         ###   ########.fr       */
+/*   Updated: 2024/04/11 22:53:00 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-static size_t	word_len(char *s, char c)
+static size_t	word_len(const char *s, char c)
 {
 	size_t	i;
 
@@ -22,33 +23,52 @@ static size_t	word_len(char *s, char c)
 	return (i);
 }
 
-static size_t	count_words(const char s, char c)
+size_t	s_split(const char *s, char c, char **mat)
 {
 	size_t	i;
-	size_t	count;
-	char	*s1;
+	size_t	len;
 
 	i = 0;
-	s1 = (char *)s;
-	while (s1[i] != '\0')
+	while (*s)
 	{
-		if (s1[i] != c)
-		{
-			count++;
-			while (s1[i] != c && s1[i] != '\0')
-				i++;
-		}
-		else if (s1[i] == c)
-			i++;
+		while (*s && *s == c)
+			s++;
+		len = word_len(s, c);
+		if (len && *mat)
+			mat[i] = ft_substr(s, 0, len - 1);
+		i += (len > 0);
+		s += word_len(s, c);
 	}
-	return (count);
+	return (i);
 }
 
-char	**ft_split(const char *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	char	*str;
-	size_t	i;
+	size_t	words;
+	char	**mat;
 
-	str = (char *)s;
-	
+	if (!s)
+		return (NULL);
+	words = s_split((char *)s, c, NULL);
+	mat = ft_calloc(sizeof(char *) , (words + 1));
+	if (!mat)
+		return (NULL);
+	s_split((char *)s, c, mat);
+	mat[words] = NULL;
+	return (mat);
+}
+
+int		main()
+{
+	char		**matrix;
+	int			i;
+
+	i = 0;
+	matrix = ft_split(".....ola.caralho.fds.puta...", '.');
+	while (matrix[i])
+	{
+		printf("word %d: %s\n", i, matrix[i]);
+		i++;
+	}
+	return (0);
 }
