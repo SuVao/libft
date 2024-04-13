@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 13:11:55 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/10 13:11:55 by pesilva-         ###   ########.fr       */
+/*   Created: 2024/04/12 22:54:38 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/12 22:54:38 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #ifndef LIBFT_H
 # define LIBFT_H
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdio.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
@@ -41,6 +41,5 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 char	*ft_strjoin(char const *s1, char const *s2);
-void	*ft_calloc(size_t count, size_t size);
-
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 #endif

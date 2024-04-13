@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 11:55:50 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/10 11:55:50 by pesilva-         ###   ########.fr       */
+/*   Created: 2024/04/12 22:49:26 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/12 22:49:26 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 #include <stdio.h>
 

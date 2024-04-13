@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 11:55:23 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/10 11:55:23 by pesilva-         ###   ########.fr       */
+/*   Created: 2024/04/12 22:48:55 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/12 22:48:55 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
