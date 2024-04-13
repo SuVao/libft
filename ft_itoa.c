@@ -53,11 +53,11 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-int		main()
+/*int		main()
 {
 	char	*str;
 
 	str = ft_itoa(-2147483648);
 	printf("nbr = %s \n", str);
 	return (0);
-}
+}*/
