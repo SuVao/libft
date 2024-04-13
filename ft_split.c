@@ -56,17 +56,17 @@ char	**ft_split(const char *s, char c)
 	return (matrix);
 }
 
-int		main()
-{
-	char		**matrix;
-	int			i;
+// int		main()
+// {
+// 	char		**matrix;
+// 	int			i;
 
-	i = 0;
-	matrix = ft_split(".....ola.caralho.fds.puta...", '.');
-	while (matrix[i])
-	{
-		printf("word %d: %s\n", i, matrix[i]);
-		i++;
-	}
-	return (0);
-}
+// 	i = 0;
+// 	matrix = ft_split(".....ola.caralho.fds.puta...", '.');
+// 	while (matrix[i])
+// 	{
+// 		printf("word %d: %s\n", i, matrix[i]);
+// 		i++;
+// 	}
+// 	return (0);
+// }

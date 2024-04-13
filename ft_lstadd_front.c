@@ -6,7 +6,7 @@
 /*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/13 13:53:33 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/13 14:01:03 by pesilva-         ###   ########.fr       */
+/*   Updated: 2024/04/13 14:15:43 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,15 @@ void ft_lstadd_front(t_list **lst, t_list *new)
 	*lst = new;
 }
 
-int	main(void)
-{
-	t_list	*new;
-	t_list	*lst;
+// int	main(void)
+// {
+// 	t_list	*new;
+// 	t_list	*lst;
 
-	new = ft_lstnew("Hello, World!");
-	lst = ft_lstnew("Goodbye, World!");
-	ft_lstadd_front(&lst, new);
-	printf("lst->content: %s\n", (char *)lst->content);
-	printf("lst->next->content: %s\n", (char *)lst->next->content);
-	return (0);
-}
+// 	new = ft_lstnew("Hello, World!");
+// 	lst = ft_lstnew("Goodbye, World!");
+// 	ft_lstadd_front(&lst, new);
+// 	printf("lst->content: %s\n", (char *)lst->content);
+// 	printf("lst->next->content: %s\n", (char *)lst->next->content);
+// 	return (0);
+// }
