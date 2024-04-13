@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 13:04:23 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/10 13:04:23 by pesilva-         ###   ########.fr       */
+/*   Created: 2024/04/12 22:49:58 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/12 22:49:58 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"

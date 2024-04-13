@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 13:11:48 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/10 13:11:48 by pesilva-         ###   ########.fr       */
+/*   Created: 2024/04/12 22:54:25 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/12 22:54:25 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 int	ft_toupper(int c)

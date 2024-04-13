@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 13:06:27 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/10 13:06:27 by pesilva-         ###   ########.fr       */
+/*   Created: 2024/04/12 22:51:12 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/12 22:51:12 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"

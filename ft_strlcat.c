@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 13:10:09 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/10 13:10:09 by pesilva-         ###   ########.fr       */
+/*   Created: 2024/04/12 22:52:43 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/12 22:52:43 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 #include <stdio.h>
 
@@ -37,15 +36,15 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	return (a + c);
 }
 
-/*int		main()
-{
-	char			dest[] = { "puta que " };
-	const char		src[] = { "pariu!"};
-	size_t			i;
-	size_t			res;
+// int		main()
+// {
+// 	char			dest[] = { "puta que " };
+// 	const char		src[] = { "pariu!"};
+// 	size_t			i;
+// 	size_t			res;
 
-	i = 7;
-	res = ft_strlcat(dest, src, i);
-	printf("tamanho da string final: %ld \n", res);
-	return (0);
-}*/
+// 	i = 7;
+// 	res = ft_strlcat(dest, src, i);
+// 	printf("tamanho da string final: %ld \n", res);
+// 	return (0);
+// }

@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 13:07:42 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/10 14:10:26 by pesilva-         ###   ########.fr       */
+/*   Created: 2024/04/12 22:52:30 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/12 22:52:30 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 #include <stdio.h>
 

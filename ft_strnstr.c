@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 13:10:56 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/10 13:10:56 by pesilva-         ###   ########.fr       */
+/*   Created: 2024/04/12 22:53:09 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/12 22:53:09 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
