@@ -1,38 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/13 13:30:27 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/13 13:50:13 by pesilva-         ###   ########.fr       */
+/*   Created: 2024/04/13 13:42:36 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/13 14:02:55 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+t_list	*ft_lstnew(void *content)
 {
-	unsigned int	i;
+	t_list	*new;
 
-	i = 0;
-	while (s[i])
-	{
-		f(i, &s[i]);
-		i++;
-	}
+	new = (t_list *)malloc(sizeof(t_list));
+	if (!new)
+		return (NULL);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }
 
-// void print_index(unsigned int i, char *c)
+// int	main(void)
 // {
-// 	printf("Index: %d, Char: %c\n", i, *c);
-// }
+// 	t_list	*new;
 
-// int main()
-// {
-// 	char	str[] = "ola caralho";
-
-// 	ft_striteri(str, print_index);
+// 	new = ft_lstnew("Hello, World!");
+// 	printf("new->content: %s\n", (char *)new->content);
 // 	return (0);
 // }
