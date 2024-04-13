@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdio.h>
-#include <unistd.h>
 
 char	*ft_strstr(const char *s1, const char *s2)
 {
