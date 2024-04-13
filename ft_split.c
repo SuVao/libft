@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/12 22:51:35 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/12 22:51:35 by pesilva-         ###   ########.fr       */
+/*   Created: 2024/04/10 16:03:35 by pesilva-          #+#    #+#             */
+/*   Updated: 2024/04/10 17:23:52 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
  static size_t	word_len(const char *s, char c)
