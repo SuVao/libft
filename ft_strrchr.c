@@ -14,38 +14,25 @@
 char	*ft_strrchr(const char *str, int c)
 {
 	int		i;
-	char	*s1;
-	int		count;
 
 	i = 0;
-	s1 = (char *)str;
-	count = 0;
-	while (s1[i] != '\0')
-	{
-		if (s1[i] == c)
-			count++;
+	while (str[i])
 		i++;
-	}
-	if (count == 0)
-		return (0);
-	i--;
-	while (s1[i] != c)
+	while (i >= 0)
 	{
-		if (s1[i] == c)
-			break ;
+		if (str[i] == c)
+			return ((char *)str + i);
 		i--;
 	}
-	return (&s1[i]);
+	return (0);
 }
 
-/*int main () {
+// int main () {
 
-   const char str[] = "https://www.tutorialspoint.com";
-   const char ch = '.';
-   char *ret;
-
-   ret = ft_strrchr(str, ch);
-
-   printf("String after |%c| is - |%s|\n", ch, ret);
-   return(0);
-}*/
+//    const char str[] = "https://www.tutorialspoint.com";
+//    const char ch = 'h';
+//    char *ret;
+//    ret = ft_strrchr(str, ch);
+//    printf("String after |%c| is - |%s|\n", ch, ret);
+//    return(0);
+// }

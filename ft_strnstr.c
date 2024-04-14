@@ -14,42 +14,39 @@
 
 char	*ft_strnstr(const char *src, const char *to_find, size_t tam)
 {
-	char	*str_src;
-	char	*str_find;
 	size_t	i;
 	size_t	j;
+	size_t	len;
 
+	len = ft_strlen(to_find);
 	i = 0;
-	str_src = (char *)src;
-	str_find = (char *)to_find;
-	if (to_find == NULL)
-		return (0);
-	while (str_src[i] != '\0' && i < tam)
+	if (len == 0)
+		return ((char *)src);
+	while (src[i] && i < tam)
 	{
-		if (str_src[i + 1] == str_find[j])
+		j = 0;
+		while (src[i + j] == to_find[j] && j < len && i + j < tam)
 		{
-			j = 0;
-			while (str_src[i] == str_find[j] || str_find[j] != '\0')
-				j++;
-			if (str_find[j] == '\0')
-				return (&str_src[i]);
+			if (j == len - 1)
+				return ((char *)&src[i]);
+			j++;
 		}
 		i++;
 	}
 	return (0);
 }
 
-/*int main() {
-    const char source[] = {"Hello, world! This is a test."};
-    char substring[] = {"world"};
-    size_t max_len = 15; // Limite máximo de caracteres a serem pesquisados
+// int main() {
+//     const char source[] = {"Hello, world! This is a test."};
+//     char substring[] = {""};
+//     size_t max_len = 15; // Limite máximo de caracteres a serem pesquisados
 
-    char *result = ft_strnstr(source, substring, max_len);
-    if (result != NULL) {
-        printf("Substring encontrada: %s\n", result);
-    } else {
-        printf("Substring não encontrada.\n");
-    }
+//     char *result = ft_strnstr(source, substring, max_len);
+//     if (result != NULL) {
+//         printf("Substring encontrada: %s\n", result);
+//     } else {
+//         printf("Substring não encontrada.\n");
+//     }
 
-    return 0;
-}*/
+//     return 0;
+// }

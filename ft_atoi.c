@@ -22,7 +22,9 @@ int	ft_atoi(const char *str)
 	sign = 1;
 	i = 0;
 	s1 = (char *)str;
-	while (s1[i] <= 32)
+	if (!s1)
+		return (0);
+	while (s1[i] == ' ' || (s1[i] >= 9 && s1[i] <= 13))
 		i++;
 	if (s1[i] == '+' || s1[i] == '-')
 	{
@@ -37,14 +39,16 @@ int	ft_atoi(const char *str)
 	}
 	return (res * sign);
 }
-/*int		main()
-{
-	const char	s1[] = {"    -3124"};
-	int		res1;
-	int		res2;
 
-	res1 = ft_atoi(s1);
-	res2 = atoi(s1);
-	printf("ft_atoi: %d \natoi: %d\n", res1, res2);
-	return (0);
-}*/
+// int		main()
+// {
+// 	const char	s1[] = {"\e475"};
+// 	int		res1;
+// 	int		res2;
+// 	int		i;
+// 	i = '\e';
+// 	res1 = ft_atoi(s1);
+// 	res2 = atoi(s1);
+// 	printf("ft_atoi: %d \natoi: %d\n", res1, res2);
+// 	return (0);
+// }
