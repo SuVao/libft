@@ -12,40 +12,22 @@
 
 #include "libft.h"
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char			*str;
 	unsigned int	i;
+	char			*str;
 
 	i = 0;
+	if (!s || !*f)
+		return (0);
 	str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!str)
 		return (0);
-	while (s[i] != '\0')
+	while (s[i])
 	{
 		str[i] = f(i, s[i]);
 		i++;
 	}
 	str[i] = '\0';
 	return (str);
-}
-
-char	tuppercase(unsigned int d, char c)
-{
-	if (d % 2 == 0)
-	{
-		if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	}
-	return (c);
-}
-
-int main()
-{
-	char	*str;
-
-	str = ft_strmapi("ola caralho", tuppercase);
-	printf("string apos a funcao: %s", str);
-	free(str);
-	return (0);
 }
