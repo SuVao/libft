@@ -11,30 +11,38 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	const unsigned char		*char_src;
-	unsigned char			*char_dest;
-	size_t					i;
+	const unsigned char	*s;
+	unsigned char		*d;
+	size_t				i;
 
 	i = 0;
-	char_src = src;
-	char_dest = dest;
-	while (i < n)
+	s = (unsigned char *)src;
+	d = (unsigned char *)dst;
+	if (s < d)
 	{
-		char_dest[i] = char_src[i];
-		i++;
+		while (len--)
+			d[len] = s[len];
 	}
-	return (dest);
+	else
+	{
+		while (i < len)
+		{
+			d[i] = s[i];
+			i++;
+		}
+	}
+	return (dst);
 }
 
-/*int main () {
-   char dest[] = "old string";
-   const char src[]  = "fuck string";
+// int main () {
+//    char dest[] = "old string";
+//    const char src[]  = "fuck string";
 
-   printf("Before memmove dest = %s, src = %s\n", dest, src);
-   ft_memmove(dest, src, 5);
-   printf("After memmove dest = %s, src = %s\n", dest, src);
+//    printf("Before memmove dest = %s, src = %s\n", dest, src);
+//    ft_memmove(dest, src, 5);
+//    printf("After memmove dest = %s, src = %s\n", dest, src);
 
-   return(0);
-}*/
+//    return(0);
+// }

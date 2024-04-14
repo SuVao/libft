@@ -31,8 +31,10 @@ OBJ = $(SRC:.c=.o)
 # alvo padrão
 all: $(NAME)
 
-# alvo
+# # alvo
 bonus: $(NAME)
+
+
 
 # regra de compilação
 $(NAME): $(OBJ)

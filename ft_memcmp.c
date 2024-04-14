@@ -14,22 +14,20 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	const char	*str_s1;
-	const char	*str_s2;
-	int			i;
-	int			tam;
+	unsigned char	*str1;
+	unsigned char	*str2;
 
-	str_s1 = s1;
-	str_s2 = s2;
-	i = 0;
-	tam = (int)n;
-	while (i < tam && (str_s1[i] == str_s2[i]
-			&& str_s1[i] != '\0' && str_s2[i] != '\0'))
-		i++;
-	if (tam == 0)
-		return (0);
-	printf("%d \n", str_s1[i] - str_s2[i]);
-	return (str_s1[i] - str_s2[i]);
+	str1 = (unsigned char *)s1;
+	str2 = (unsigned char *)s2;
+	while (n > 0)
+	{
+		if (*str1 != *str2)
+			return (*str1 - *str2);
+		str1++;
+		str2++;
+		n--;
+	}
+	return (0);
 }
 
 /*int main () {
@@ -37,10 +35,10 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
    char str2[15];
    int ret;
 
-   memcpy(str1, "abcdef", 6);
-   memcpy(str2, "ABCDEF", 6);
+   memcpy(str1, "1bcdef", 1);
+   memcpy(str2, "1BCDEF", 1);
 
-   ret = ft_memcmp(str1, str2, 5);
+   ret = ft_memcmp(str1, str2, 1);
 
    if(ret > 0) {
       printf("str2 is less than str1");
