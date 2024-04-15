@@ -34,7 +34,7 @@ static size_t	str_split(char *s, char c, char **matrix)
 			s++;
 		len = word_len(s, c);
 		if (len && matrix)
-			matrix[i] = ft_substr(s, 0, len - 1);
+			matrix[i] = ft_substr(s, 0, len);
 		i += (len > 0);
 		s += len;
 	}
@@ -60,9 +60,9 @@ char	**ft_split(const char *s, char c)
 // {
 // 	char		**matrix;
 // 	int			i;
-
 // 	i = 0;
-// 	matrix = ft_split(".....ola.caralho.fds.puta...", '.');
+// 	matrix = ft_split("lorem ipsum dolor sit amet, consectetur adipiscin
+// g elit. Sed non risus. Suspendisse", ' ');
 // 	while (matrix[i])
 // 	{
 // 		printf("word %d: %s\n", i, matrix[i]);
