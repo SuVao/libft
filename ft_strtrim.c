@@ -11,68 +11,44 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-static size_t	t_len(char *s1, char *set)
+int	ft_itsset(char c, const char *set)
 {
-	size_t	i;
-	size_t	j;
-	char	*str1;
-	char	*sep;
+	int	i;
 
 	i = 0;
-	j = 0;
-	sep = (char *)set;
-	str1 = (char *)s1;
-	while (str1[i] != '\0')
+	while (set[i])
+	{
+		if (c == set[i])
+			return (1);
 		i++;
-	while (sep[j] != '\0')
-		j++;
-	return (i - (j * 2));
-}
-
-static char		*new_str(size_t tam)
-{
-	char	*new_str;
-
-	new_str = (char *)malloc(sizeof(char) * tam);
-	if (!new_str)
-		return (NULL);
-	return (new_str);
+	}
+	return (0);
 }
 
 char	*ft_strtrim(const char *s1, const char *set)
 {
-	size_t	i;
-	size_t	j;
-	size_t	h;
-	char	*str1;
-	char	*sep;
 	char	*new_s;
-	
-	str1 = (char *)s1;
-	sep = (char *)set;
+	int		i;
+	int		j;
+
+	if (!s1 || !set)
+		return (NULL);
 	i = 0;
-	new_s = new_str(t_len(str1, sep) + 1);
-	j = 0;
-	while (sep[j] != '\0')
-	{
-		i++;
-		j++;
-	}
-	h = 0;
-	while (i < (t_len(str1, sep) + 1))
-		new_s[h++] = str1[i++];
-	new_s[i] = '\0';
+	while (s1[i] && ft_itsset(s1[i], set))
+		++i;
+	j = ft_strlen(s1);
+	while (j > i && ft_itsset(s1[j - 1], set))
+		--j;
+	new_s = ft_substr(s1, i, j - i);
 	return (new_s);
 }
 
-/*int		main()
-{
-	char	s1[] = {" ola caralho! "};
-	char	sep[] = { " " };
-	char	*new;
-
-	new = ft_strtrim(s1, sep);
-	printf("nova string: %s\n", new);
-	free(new);
-	return (0);
-}*/
+// int		main()
+// {
+// 	const char	s1[] = {"lorem \n ipsum \t dolor \n sit \t ametol"};
+// 	const char	set[] = {"lo"};
+// 	char		*new_string;
+// 	new_string = ft_strtrim(s1, set);
+// 	printf("string criada: %s \n", new_string);
+// 	return (0);
+// }

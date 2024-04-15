@@ -58,17 +58,23 @@ char	*ft_itoa(int n)
 	str = (char *)malloc(sizeof(char) * (count_dig(n) + 1));
 	if (!str)
 		return (0);
+	if (n == 0)
+	{
+		str[0] = '0';
+		str[1] = '\0';
+		return (str);
+	}
 	i = count_dig(n);
 	str = convert(n, str, i);
 	str[i] = '\0';
 	return (str);
 }
 
-/*int		main()
-{
-	char	*str;
+// int		main()
+// {
+// 	char	*str;
 
-	str = ft_itoa(-2147483648);
-	printf("nbr = %s \n", str);
-	return (0);
-}*/
+// 	str = ft_itoa(0);
+// 	printf("nbr = %s \n", str);
+// 	return (0);
+// }

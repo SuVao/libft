@@ -6,7 +6,7 @@
 /*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 11:55:04 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/14 18:14:51 by pesilva-         ###   ########.fr       */
+/*   Updated: 2024/04/15 18:54:58 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,24 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	tam;
 	size_t	j;
 	char	*str;
-	char	*sub_str;
 
-	sub_str = (char *)s;
-	j = 0;
-	tam = len - start;
-	if (len == ft_strlen(s))
-		return (sub_str);
-	str = (char *)malloc(sizeof(char) * (tam + 1));
-	if (!s || !str)
+	if (!s)
 		return (NULL);
-	while (j < tam && sub_str[start])
-		str[j++] = sub_str[start++];
+	if (start >= ft_strlen(s))
+		return (ft_strdup(""));
+	if (ft_strlen(s) - start < len)
+		len = ft_strlen(s) - start;
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (NULL);
+	j = 0;
+	while (j < len && s[start + j] != '\0')
+	{
+		str[j] = s[start + j];
+		j++;
+	}
 	str[j] = '\0';
 	return (str);
 }
@@ -37,7 +40,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // {
 // 	char	str[] = "lorem ipsum dolor sit amet";
 // 	char	*strsub;
-
 // 	strsub = ft_substr(str, 7, 10);
 // 	printf("string criada: %s \n", strsub);
 // 	free(strsub);
