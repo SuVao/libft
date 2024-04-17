@@ -45,6 +45,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!str1 || !str2)
 		return (NULL);
 	new_s = new_str(t_strlen(s1) + t_strlen(s2));
+	if (!new_s)
+		return (NULL);
 	while (*str1)
 		new_s[i++] = *str1++;
 	while (*str2)

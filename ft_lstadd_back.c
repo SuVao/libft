@@ -6,7 +6,7 @@
 /*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/14 22:05:17 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/17 12:06:05 by pesilva-         ###   ########.fr       */
+/*   Updated: 2024/04/17 15:35:08 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 	last = (t_list *)malloc(sizeof(t_list));
 	if (!last)
-		return;
+		return ;
 	if (lst && *lst)
 	{
 		last = ft_lstlast(*lst);
@@ -27,7 +27,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	}
 	else
 		*lst = new;
-	return;
+	return ;
 }
 
 // int main()
