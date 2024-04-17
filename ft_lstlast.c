@@ -6,7 +6,7 @@
 /*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/13 15:53:06 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/13 16:05:33 by pesilva-         ###   ########.fr       */
+/*   Updated: 2024/04/17 11:47:45 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ t_list *ft_lstlast(t_list *lst)
 {
 	t_list	*last;
 
+	if (!lst)
+		return (NULL);
 	last = lst;
 	while (last->next != NULL)
 		last = last->next;
