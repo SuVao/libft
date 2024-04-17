@@ -12,6 +12,9 @@
 # nome
 NAME = libft.a
 
+# autor
+AUTHOR = pesilva-
+
 # compilador
 CC = cc
 

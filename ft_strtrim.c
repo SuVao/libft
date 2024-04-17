@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_itsset(char c, const char *set)
+static int	ft_itsset(char c, const char *set)
 {
 	int	i;
 
