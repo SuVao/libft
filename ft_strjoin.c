@@ -26,7 +26,7 @@ static char	*new_str(size_t tam)
 {
 	char	*new_str;
 
-	new_str = (char *)malloc(sizeof(char) * tam + 1);
+	new_str = (char *)malloc(sizeof(char) * (tam + 1));
 	if (!new_str)
 		return (NULL);
 	return (new_str);
