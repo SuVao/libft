@@ -41,7 +41,7 @@ all: $(NAME)
 
 # alvo bônus	
 bonus: $(BONUS_OBJ)
-	ar rcs $(NAME) $(BONUS_OBJ)
+	ar rcs $(NAME) $(OBJ) $(BONUS_OBJ)
 
 # regra de compilação
 $(NAME): $(OBJ)
@@ -53,7 +53,7 @@ $(NAME): $(OBJ)
 
 #regra para limpar os arquivos .o
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(BONUS_OBJ)
 
 # regra para limpar os arquivos gerados duratne a compilação
 fclean: clean
