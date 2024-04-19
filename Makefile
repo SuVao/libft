@@ -18,7 +18,7 @@ AUTHOR = pesilva-
 # compilador
 CC = cc
 
-FLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 # arquivos fonte
 SRC = ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_memchr.c ft_memcmp.c \
@@ -40,16 +40,20 @@ BONUS_OBJ = $(BONUS:.c=.o)
 # alvo padrão
 all: $(NAME)
 
-# alvo bônus	
-bonus: $(BONUS_OBJ)
-
 # regra de compilação
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
+# alvo bônus	
+bonus: $(BONUS_OBJ)
+	@make OBJ="$(BONUS_OBJ)" all
+
 # regras de geração de arquivos .o
 %.o: %.c
-	$(CC) $(FLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
+
+bonus_%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 #regra para limpar os arquivos .o
 clean:
