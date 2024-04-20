@@ -6,7 +6,7 @@
 /*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 12:41:22 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/19 17:19:34 by pesilva-         ###   ########.fr       */
+/*   Updated: 2024/04/20 15:05:18 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void *ft_rot32(void *content)
 	return (content);
 }
 
-int main()
+/* int main()
 {
 	t_list *list;
 	t_list *new_list;
@@ -70,4 +70,4 @@ int main()
 		tmp = tmp->next;
 	}
 	return (0);
-}
+} */

@@ -20,6 +20,8 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
+
+
 # arquivos fonte
 SRC = ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_memchr.c ft_memcmp.c \
 	  ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c \
@@ -37,16 +39,15 @@ OBJ = $(SRC:.c=.o)
 
 BONUS_OBJ = $(BONUS:.c=.o)
 
-# alvo padrão
-all: $(NAME)
-
-# regra de compilação
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
+# alvo padrão
+all: $(NAME)
+
 # alvo bônus	
 bonus: $(BONUS_OBJ)
-	@make OBJ="$(BONUS_OBJ)" all
+	make OBJ="$(BONUS_OBJ)" all
 
 # regras de geração de arquivos .o
 %.o: %.c
