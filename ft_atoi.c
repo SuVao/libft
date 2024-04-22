@@ -42,11 +42,10 @@ int	ft_atoi(const char *str)
 
 // int		main()
 // {
-// 	const char	s1[] = {"\e475"};
+// 	const char	s1[] = {"    +1234"};
 // 	int		res1;
 // 	int		res2;
-// 	int		i;
-// 	i = '\e';
+
 // 	res1 = ft_atoi(s1);
 // 	res2 = atoi(s1);
 // 	printf("ft_atoi: %d \natoi: %d\n", res1, res2);

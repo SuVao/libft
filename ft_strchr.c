@@ -20,11 +20,11 @@ char	*ft_strchr(const char *str, int c)
 	str1 = (char *)str;
 	if (c == '\0')
 	{
-		while (str1[i])
+		while (str1[i] != '\0')
 			i++;
 		return (&str1[i]);
 	}
-	while (str1[i])
+	while (str1[i] != '\0')
 	{
 		if (str1[i] == c)
 			return (&str1[i]);
@@ -32,21 +32,22 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return (0);
 }
-/*int		main()
-{
-	char	str1[] = {"ola caralho"};
-	char	*string;
-	char	chr = 'r';
 
-	char str2[] = "https://www.tutorialspoint.com";
-	char ch = '.';
-	char *ret;
+// int		main()
+// {
+// 	char	str1[] = {"ola caralho"};
+// 	char	*string;
+// 	int	chr = 't' + 256;
 
-	ret = strchr(str2, ch);
+// 	char str2[] = "https://www.tutorialspoint.com";
+// 	char ch = '.';
+// 	char *ret;
 
-	printf("String after |%c| is - |%s|\n", ch, ret);
+// 	ret = strchr(str2, ch);
 
-	string = ft_strchr(str1, chr);
-	printf("letra encontrada: %s", string);
-	return (0);
-}*/
+// 	printf("String after |%c| is - |%s|\n", ch, ret);
+
+// 	string = ft_strchr(str1, chr);
+// 	printf("letra encontrada: %s", string);
+// 	return (0);
+// }
