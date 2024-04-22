@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pesilva- <pesilva-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pesilva- <pesilva-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 12:41:22 by pesilva-          #+#    #+#             */
-/*   Updated: 2024/04/20 17:31:54 by pesilva-         ###   ########.fr       */
+/*   Updated: 2024/04/22 12:44:29 by pesilva-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (new_lst);
 }
 
-/* void *ft_rot32(void *content)
+void *ft_rot32(void *content)
 {
 	char *str;
 	int i;
@@ -50,9 +50,9 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		i++;
 	}
 	return (content);
-} */
+}
 
-/* int main()
+int main()
 {
 	t_list *list;
 	t_list *new_list;
@@ -70,4 +70,4 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		tmp = tmp->next;
 	}
 	return (0);
-} */
+}

@@ -42,7 +42,7 @@ BONUS_OBJ = $(BONUS:.c=.o)
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
-# alvo padrão
+# alvo padrã
 all: $(NAME)
 
 # alvo bônus	
