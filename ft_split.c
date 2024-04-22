@@ -35,8 +35,6 @@ static size_t	str_split(char *s, char c, char **matrix)
 		len = word_len(s, c);
 		if (len && matrix)
 			matrix[i] = ft_substr(s, 0, len);
-		if (!matrix)
-			return (NULL);
 		i += (len > 0);
 		s += len;
 	}
