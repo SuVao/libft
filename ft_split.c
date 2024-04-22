@@ -58,12 +58,13 @@ char	**ft_split(const char *s, char c)
 	return (matrix);
 }
 
-/* int		main()
+/* int	main()
 {
 	char		**matrix;
 	int			i;
 	i = 0;
-	matrix = ft_split("lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse", ' ');
+	matrix = ft_split("lorem ipsum dolor sit amet, consectetur adi
+	piscing elit. Sed non risus. Suspendisse", ' ');
 	while (matrix[i])
 	{
 		printf("word %d: %s\n", i, matrix[i]);

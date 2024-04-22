@@ -18,6 +18,8 @@ char	*ft_strchr(const char *str, int c)
 
 	i = 0;
 	str1 = (char *)str;
+	if (!ft_isascii(c))
+		return (0);
 	if (c == '\0')
 	{
 		while (str1[i] != '\0')
